@@ -1,0 +1,42 @@
+{
+  "name": "react-jest-enzyme-example",
+  "version": "1.0.0",
+  "description": "Example setup for react testing with enzyme and jest",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svnm/react-jest-enzyme-example.git"
+  },
+  "author": "svnm",
+  "license": "MIT",
+  "homepage": "https://github.com/svnm/react-jest-enzyme-example",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "7.3.3",
+    "@babel/preset-env": "7.3.1",
+    "@babel/preset-react": "7.0.0",
+    "babel-jest": "^24.7.1",
+    "babel-loader": "8.0.5",
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "html-webpack-plugin": "3.2.0",
+    "jest": "^24.7.1",
+    "jsdom": "13.2.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.8.6",
+    "webpack": "4.29.4",
+    "webpack-cli": "3.2.3",
+    "webpack-dev-server": "3.1.14"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development --port 3001 --inline --hot --config example/webpack.config",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/src/__mocks__/styleMock.js"
+    }
+  }
+}

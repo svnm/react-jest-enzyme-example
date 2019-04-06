@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link changes the class when hovered 1`] = `
+<a
+  className="normal"
+  href="https://reactjs.org"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  React
+</a>
+`;
+
+exports[`Link changes the class when hovered 2`] = `
+<a
+  className="hovered"
+  href="https://reactjs.org"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  React
+</a>
+`;
+
+exports[`Link changes the class when hovered 3`] = `
+<a
+  className="normal"
+  href="https://reactjs.org"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  React
+</a>
+`;
+
+exports[`Link renders correctly and matches snapshot 1`] = `
+<a
+  className="normal"
+  href="https://reactjs.org"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  React
+</a>
+`;
